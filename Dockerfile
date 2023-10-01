@@ -1,6 +1,7 @@
 # Dockerfile for building and running the boxfuse-sample-java-war-hello app
 # Source link: https://github.com/boxfuse/boxfuse-sample-java-war-hello
 FROM ubuntu:18.04
+LABEL maintainer="artem.vakhitov@gmail.com"
 RUN apt update
 # Do we really need VirtualBox if we don't use boxfuse itself?
 RUN apt install git default-jdk maven virtualbox -y
