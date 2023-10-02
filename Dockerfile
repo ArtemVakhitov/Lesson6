@@ -3,8 +3,7 @@
 FROM ubuntu:18.04
 LABEL maintainer="artem.vakhitov@gmail.com"
 RUN apt update
-# Do we really need VirtualBox if we don't use boxfuse itself?
-RUN apt install git default-jdk maven tomcat8 virtualbox -y
+RUN apt install git default-jdk maven tomcat8 -y
 WORKDIR /tmp
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 WORKDIR boxfuse-sample-java-war-hello
