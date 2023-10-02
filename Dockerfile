@@ -18,4 +18,4 @@ RUN mvn package
 RUN cp target/hello-1.0.war /var/lib/tomcat8/webapps/
 # A VM test shows that with a Tomcat config, we need 8080, not 8888 
 EXPOSE 8080
-CMD ["/usr/share/tomcat8/bin/catalina.sh", "run"]
+CMD ["catalina.sh", "run"]
